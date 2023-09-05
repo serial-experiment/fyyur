@@ -27,13 +27,12 @@ app.config.from_object('config')
 db.init_app(app)
 migrate = Migrate(app, db)
 
-# initailize seeder
+# Initialize seeder
 seeder = FlaskSeeder()
 seeder.init_app(app, db)
+# Add seeders
+seeder.add_seed(VenueSeeder)
 
-with app.app_context():
-  venue_seeder = VenueSeeder(db=db)
-  venue_seeder.run()
 
 #----------------------------------------------------------------------------#
 # Filters.
