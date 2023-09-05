@@ -1,7 +1,5 @@
-from app import *
-from models import *
-from datetime import datetime
 from flask_seeder import Seeder
+from models import Venue
 
 ## mock data taken from app.py
 data = [{
@@ -33,13 +31,12 @@ data = [{
 class VenueSeeder(Seeder):
     def __init__(self, db=None):
         super().__init__(db=db)
-        self.db = db
-        
+        self.priority = 1
     def run(self):
         for venue_data in data:
             venue = Venue(
                 name=venue_data["name"],
-                genres=venue_data["genres"],
+                # genres=venue_data["genres"],
                 address=venue_data["address"],
                 city=venue_data["city"],
                 state=venue_data["state"],
@@ -51,5 +48,3 @@ class VenueSeeder(Seeder):
                 image_link=venue_data["image_link"],
             )
             self.db.session.add(venue)
-        self.db.session.commit() 
-

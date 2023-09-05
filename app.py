@@ -15,7 +15,7 @@ from flask_wtf import Form
 from forms import *
 from models import *
 from flask_seeder import FlaskSeeder
-from seeders import VenueSeeder
+#from seeders import VenueSeeder
 
 #----------------------------------------------------------------------------#
 # App Config.
@@ -30,8 +30,6 @@ migrate = Migrate(app, db)
 # Initialize seeder
 seeder = FlaskSeeder()
 seeder.init_app(app, db)
-# Add seeders
-seeder.add_seed(VenueSeeder)
 
 
 #----------------------------------------------------------------------------#
