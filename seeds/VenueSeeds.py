@@ -5,7 +5,7 @@ from models import Venue
 data = [{
     "id": 1,
     "name": "The Musical Hop",
-    "genres": '{"Jazz", "Reggae", "Swing", "Classical", "Folk"}',
+    "genres": ['Jazz', 'Reggae', 'Swing', 'Classical', 'Folk'],
     "address": "1015 Folsom Street",
     "city": "San Francisco",
     "state": "CA",
@@ -18,7 +18,7 @@ data = [{
 }, {
     "id": 2,
     "name": "Park Square Live Music & Coffee",
-    "genres": '{"Rock n Roll", "Jazz", "Classical", "Folk"}',
+    "genres": ['Rock n Roll', 'Jazz', 'Classical', 'Folk'],
     "address": "34 Whiskey Moore Ave",
     "city": "San Francisco",
     "state": "CA",
@@ -31,7 +31,7 @@ data = [{
 }, {
     "id": 3,
     "name": "The Dueling Pianos Bar",
-    "genres": '{"Classical", "R&B", "Hip-Hop"}',
+    "genres": ['Classical', 'R&B', 'Hip-Hop'],
     "address": "335 Delancey Street",
     "city": "New York",
     "state": "NY",
@@ -44,7 +44,7 @@ data = [{
 }, {
     "id": 4,
     "name": "The Blue Note",
-    "genres": '{"Jazz", "Blues", "Classical", "Folk"}',
+    "genres": ['Jazz', 'Blues', 'Classical', 'Folk'],
     "address": "131 W 3rd St",
     "city": "New York",
     "state": "NY",

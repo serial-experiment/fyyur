@@ -5,7 +5,7 @@ from models import Artist
 data = [{
     "id": 4,
     "name": "Guns N Petals",
-    "genres": '{"Rock n Roll"}',
+    "genres": ['Rock n Roll'],
     "city": "San Francisco",
     "state": "CA",
     "phone": "326-123-5000",
@@ -17,7 +17,7 @@ data = [{
 }, {
     "id": 5,
     "name": "Matt Quevedo",
-    "genres": '{"Jazz"}',
+    "genres": ['Jazz'],
     "city": "New York",
     "state": "NY",
     "phone": "300-400-5000",
@@ -29,7 +29,7 @@ data = [{
 }, {
     "id": 6,
     "name": "The Wild Sax Band",
-    "genres": '{"Jazz", "Classical"}',
+    "genres": ['Jazz', 'Classical'],
     "city": "San Francisco",
     "state": "CA",
     "phone": "432-325-5432",

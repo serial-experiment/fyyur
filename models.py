@@ -19,7 +19,7 @@ class Venue(db.Model):
     website = db.Column(db.String(120))
     seeking_talent = db.Column(db.Boolean)
     seeking_description = db.Column(db.String(500))
-    genres = db.Column(db.String(120))
+    genres = db.Column(db.ARRAY(db.String), nullable=False)
     shows = db.relationship('Show', backref='venue', lazy=True)
 
     def __repr__(self):
@@ -30,7 +30,7 @@ class Artist(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-    genres = db.Column(db.String(120))
+    genres = db.Column(db.ARRAY(db.String), nullable=False)
     city = db.Column(db.String(120))
     state = db.Column(db.String(120))
     phone = db.Column(db.String(120))
